@@ -7,43 +7,52 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0d1117;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #0d1117, #1a1f2b);
       color: #ffffff;
     }
     header {
-      background-color: #161b22;
+      background-color: #11161c;
       padding: 20px;
       text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
       color: #00ffcc;
+      letter-spacing: 1px;
     }
     nav {
       display: flex;
       justify-content: center;
-      background-color: #21262d;
-      padding: 10px;
+      background-color: #1c1f26;
+      padding: 12px 0;
     }
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1em;
     }
-    section {
-      padding: 40px;
-      text-align: center;
+    nav a:hover {
+      color: #00ffcc;
     }
     .hero {
       background-color: #1e222a;
       padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
     }
     .hero h2 {
-      font-size: 2em;
+      font-size: 2.5em;
       color: #00ffcc;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: auto;
     }
     .button {
       background-color: #00ffcc;
@@ -52,17 +61,30 @@
       margin-top: 20px;
       font-size: 1em;
       color: #000;
+      border-radius: 5px;
       cursor: pointer;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background-color: #00e6b8;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
     }
     footer {
-      background-color: #161b22;
+      background-color: #11161c;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
     }
-    .social-link img {
+    #contact img {
       vertical-align: middle;
       margin-right: 8px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
@@ -107,11 +129,10 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: sigmacoin@gmail.com</p>
-
-    <p class="social-link">
+    <p>Email: <a href="mailto:sigmacoin@gmail.com" style="color: #00ffcc;">sigmacoin@gmail.com</a></p>
+    <p>
       <a href="https://t.me/sigmacoin_official_1" target="_blank">
-        <img src="telegram-logo.png" alt="Telegram" width="24" />
+        <img src="telegram-logo.png" alt="Telegram" width="24">
         Join us on Telegram: @sigmacoin_official_1
       </a>
     </p>
