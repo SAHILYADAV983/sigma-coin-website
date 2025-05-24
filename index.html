@@ -2,79 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sigma Coin (SGM)</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0d1117;
-      color: #ffffff;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+      color: #fff;
     }
     header {
-      background-color: #161b22;
-      padding: 20px;
       text-align: center;
+      padding: 40px 20px;
+      background-color: #121212;
     }
     header img {
       width: 80px;
       height: auto;
-      margin-bottom: 10px;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #00ffcc;
+      margin-top: 20px;
+      font-size: 2.8em;
+      color: #00ffc3;
     }
     nav {
+      background-color: #1e1e1e;
+      padding: 15px;
       display: flex;
       justify-content: center;
-      background-color: #21262d;
-      padding: 10px;
     }
     nav a {
-      color: white;
-      margin: 0 15px;
+      color: #00ffc3;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffffff;
     }
     section {
-      padding: 40px;
+      padding: 60px 20px;
       text-align: center;
     }
     .hero {
-      background-color: #1e222a;
-      padding: 60px 20px;
+      background-color: #222;
+      padding: 80px 20px;
     }
     .hero h2 {
-      font-size: 2em;
-      color: #00ffcc;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #00ffc3;
     }
     .button {
-      background-color: #00ffcc;
+      background-color: #00ffc3;
       border: none;
-      padding: 15px 30px;
-      margin-top: 20px;
-      font-size: 1em;
+      padding: 15px 40px;
+      font-size: 1.1em;
       color: #000;
       cursor: pointer;
-    }
-    .contact-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      border-radius: 10px;
       margin-top: 20px;
     }
-    .contact-icon img {
-      width: 24px;
-      height: 24px;
-      margin-right: 8px;
+    .info-box {
+      background-color: #1c1c1c;
+      margin: 20px auto;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 800px;
     }
     footer {
-      background-color: #161b22;
+      background-color: #121212;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
+    }
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 20px;
+      color: #00ffc3;
+      text-decoration: none;
+    }
+    .social-link img {
+      width: 30px;
+      margin-right: 10px;
     }
   </style>
 </head>
@@ -83,49 +96,48 @@
     <img src="sigma-coin-logo.png" alt="Sigma Coin Logo">
     <h1>Sigma Coin (SGM)</h1>
   </header>
-
   <nav>
     <a href="#about">About</a>
     <a href="#tokenomics">Tokenomics</a>
     <a href="#roadmap">Roadmap</a>
     <a href="#contact">Contact</a>
   </nav>
-
   <section class="hero">
-    <h2>The Future of Decentralized Finance Starts Here</h2>
-    <p>Sigma Coin (SGM) is a new-age crypto asset aiming to bring transparency, speed, and power to digital transactions.</p>
-    <button class="button">Coming Soon</button>
+    <h2>Join the Future of Decentralized Finance</h2>
+    <p>Sigma Coin (SGM) brings speed, power and transparency to the crypto world.</p>
+    <button class="button">Launch Coming Soon</button>
   </section>
-
   <section id="about">
-    <h2>About Sigma Coin</h2>
-    <p>Sigma Coin is built to empower community-driven projects with utility and speed. Designed on Binance Smart Chain for low fees and fast transactions.</p>
-  </section>
-
-  <section id="tokenomics">
-    <h2>Tokenomics</h2>
-    <p>Total Supply: 1,00,000 SGM</p>
-    <p>50% Public Sale | 20% Team | 15% Marketing | 10% Liquidity | 5% Reserve</p>
-  </section>
-
-  <section id="roadmap">
-    <h2>Roadmap</h2>
-    <p>Q1: Website Launch, Community Building</p>
-    <p>Q2: Token Launch on BSC, PancakeSwap Listing</p>
-    <p>Q3: Airdrops & Partnerships</p>
-    <p>Q4: SGM Wallet & Staking Launch</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: sigmacoin@gmail.com</p>
-
-    <div class="contact-icon">
-      <img src="telegram-logo.png" alt="Telegram">
-      <a href="https://t.me/sigmacoin_official_1" style="color: #00ffcc;" target="_blank">Join us on Telegram</a>
+    <div class="info-box">
+      <h2>About Sigma Coin</h2>
+      <p>Built on Binance Smart Chain, Sigma Coin is designed for fast transactions and low fees. It empowers the community through transparent and decentralized finance solutions.</p>
     </div>
   </section>
-
+  <section id="tokenomics">
+    <div class="info-box">
+      <h2>Tokenomics</h2>
+      <p><strong>Total Supply:</strong> 1,00,000 SGM</p>
+      <p>50% Public Sale | 20% Team | 15% Marketing | 10% Liquidity | 5% Reserve</p>
+    </div>
+  </section>
+  <section id="roadmap">
+    <div class="info-box">
+      <h2>Roadmap</h2>
+      <p>Q1: Website Launch, Community Building</p>
+      <p>Q2: Token Launch, PancakeSwap Listing</p>
+      <p>Q3: Airdrops & Partnerships</p>
+      <p>Q4: SGM Wallet, Staking Platform</p>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="info-box">
+      <h2>Contact</h2>
+      <p>Email: sigmacoin@gmail.com</p>
+      <a href="https://t.me/sigmacoin_official_1" class="social-link" target="_blank">
+        <img src="telegram-logo.png" alt="Telegram Logo">Join us on Telegram
+      </a>
+    </div>
+  </section>
   <footer>
     &copy; 2025 Sigma Coin. All rights reserved.
   </footer>
