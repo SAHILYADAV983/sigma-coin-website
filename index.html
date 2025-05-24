@@ -2,57 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sigma Coin (SGM)</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #0d1117, #1a1f2b);
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
       color: #ffffff;
     }
     header {
-      background-color: #11161c;
+      background-color: #161b22;
       padding: 20px;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    header img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
     }
     header h1 {
       margin: 0;
-      font-size: 3em;
+      font-size: 2.5em;
       color: #00ffcc;
-      letter-spacing: 1px;
     }
     nav {
       display: flex;
       justify-content: center;
-      background-color: #1c1f26;
-      padding: 12px 0;
+      background-color: #21262d;
+      padding: 10px;
     }
     nav a {
       color: white;
-      margin: 0 20px;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.1em;
     }
-    nav a:hover {
-      color: #00ffcc;
+    section {
+      padding: 40px;
+      text-align: center;
     }
     .hero {
       background-color: #1e222a;
       padding: 60px 20px;
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
     }
     .hero h2 {
-      font-size: 2.5em;
+      font-size: 2em;
       color: #00ffcc;
-    }
-    .hero p {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: auto;
     }
     .button {
       background-color: #00ffcc;
@@ -61,37 +57,33 @@
       margin-top: 20px;
       font-size: 1em;
       color: #000;
-      border-radius: 5px;
       cursor: pointer;
-      transition: background 0.3s;
     }
-    .button:hover {
-      background-color: #00e6b8;
+    .contact-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
     }
-    section {
-      padding: 40px 20px;
-      text-align: center;
+    .contact-icon img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
     }
     footer {
-      background-color: #11161c;
+      background-color: #161b22;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
-    }
-    #contact img {
-      vertical-align: middle;
-      margin-right: 8px;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="sigma-coin-logo.png" alt="Sigma Coin Logo">
     <h1>Sigma Coin (SGM)</h1>
   </header>
+
   <nav>
     <a href="#about">About</a>
     <a href="#tokenomics">Tokenomics</a>
@@ -107,10 +99,7 @@
 
   <section id="about">
     <h2>About Sigma Coin</h2>
-    <p>
-      Sigma Coin is built to empower community-driven projects with utility and speed.
-      Designed on Binance Smart Chain for low fees and fast transactions.
-    </p>
+    <p>Sigma Coin is built to empower community-driven projects with utility and speed. Designed on Binance Smart Chain for low fees and fast transactions.</p>
   </section>
 
   <section id="tokenomics">
@@ -129,13 +118,12 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:sigmacoin@gmail.com" style="color: #00ffcc;">sigmacoin@gmail.com</a></p>
-    <p>
-      <a href="https://t.me/sigmacoin_official_1" target="_blank">
-        <img src="telegram-logo.png" alt="Telegram" width="24">
-        Join us on Telegram: @sigmacoin_official_1
-      </a>
-    </p>
+    <p>Email: sigmacoin@gmail.com</p>
+
+    <div class="contact-icon">
+      <img src="telegram-logo.png" alt="Telegram">
+      <a href="https://t.me/sigmacoin_official_1" style="color: #00ffcc;" target="_blank">Join us on Telegram</a>
+    </div>
   </section>
 
   <footer>
